@@ -7,11 +7,14 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate": "graphql-codegen --config ./src/scripts/codegen.ts"
   },
   "dependencies": {
+    "@apollo/client": "^3.13.9",
     "@chakra-ui/react": "^3.24.1",
     "@emotion/react": "^11.14.0",
+    "graphql": "^16.11.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
