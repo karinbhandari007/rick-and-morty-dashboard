@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, IconButton, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, IconButton, Image, Text } from "@chakra-ui/react";
 
 interface IHeaderProps {
   onOpen: () => void;
@@ -9,8 +9,9 @@ export const Header: React.FC<IHeaderProps> = ({ onOpen }) => (
     as="header"
     align="center"
     justify="space-between"
-    py="5"
-    px="8"
+    py="2"
+    pl="2"
+    pr="8"
     bg="white"
     borderBottom="1px"
     borderColor="gray.200"
@@ -19,7 +20,14 @@ export const Header: React.FC<IHeaderProps> = ({ onOpen }) => (
     backdropFilter="blur(10px)"
   >
     <Flex align="center" gap={4}>
-      <Box>
+      <Image
+        src="/logo.jpg"
+        alt="logo"
+        objectFit="contain"
+        width="100%"
+        height="70px"
+      />
+      <Box w="full">
         <Heading
           size="md"
           bgGradient="linear(to-r, blue.500, purple.500)"

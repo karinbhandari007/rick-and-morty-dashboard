@@ -46,7 +46,6 @@ export const Sidenav: React.FC<ISidenavProps> = ({
           <Drawer.Content>
             <DrawerHeader>
               <Flex justify="space-between" align="center">
-                <Heading size="md">Menu</Heading>
                 <DrawerCloseTrigger asChild>
                   <CloseButton />
                 </DrawerCloseTrigger>

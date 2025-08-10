@@ -46,7 +46,7 @@ const Login = () => {
         left="0"
         right="0"
         bottom="0"
-        backgroundImage="url('https://timelinecovers.pro/facebook-cover/download/rick-and-morty-uhmm-facebook-cover.jpg')"
+        backgroundImage="url('https://subsonic.com/c/33-category_default/rick-and-morty.jpg')"
         animation="float 20s ease-in-out infinite"
       />
 

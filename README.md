@@ -59,11 +59,6 @@ This dashboard allows users to:
 
 ## Getting Started
 
-### Prerequisites
-
-- Node.js (>=14.x)  
-- npm or yarn  
-
 ### Installation
 
 ```bash
