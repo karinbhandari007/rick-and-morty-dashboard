@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import {
   Select as ChakraSelect,
   Portal,
@@ -27,7 +27,7 @@ export const SelectField: React.FC<ISelectFieldProps> = ({
   label,
   maxW,
 }) => {
-  const collection = React.useMemo(
+  const collection = useMemo(
     () => createListCollection({ items: options }),
     [options]
   );
