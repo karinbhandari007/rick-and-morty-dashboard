@@ -11,12 +11,8 @@ It features authentication, data fetching with Apollo Client, filtering, sorting
 - [Features](#features)  
 - [Technologies Used](#technologies-used)  
 - [Getting Started](#getting-started)  
-- [Project Structure](#project-structure)  
-- [Authentication](#authentication)  
 - [Usage](#usage)  
 - [Future Enhancements](#future-enhancements)  
-- [Collaborators](#collaborators)  
-- [Contact](#contact)
 
 ---
 
