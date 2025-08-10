@@ -40,3 +40,77 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+
+
+/* ag-grid-custom.css */
+
+.ag-theme-alpine {
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  color: #2D3748; /* Chakra gray.800 */
+  background-color: #fff;
+}
+
+/* Header styling */
+.ag-theme-alpine .ag-header {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  border-bottom: none;
+  box-shadow: 0 2px 5px rgba(102, 126, 234, 0.6);
+}
+
+.ag-theme-alpine .ag-header-cell {
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.ag-theme-alpine .ag-header-cell-label {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
+/* Row styling */
+.ag-theme-alpine .ag-row {
+  transition: background-color 0.15s ease;
+  border-bottom: 1px solid #e2e8f0; /* chakra gray.200 */
+}
+
+.ag-theme-alpine .ag-row:hover {
+  background-color: #ebf4ff; /* chakra blue.100 */
+  cursor: pointer;
+}
+
+/* Cell padding & font */
+.ag-theme-alpine .ag-cell {
+  padding: 12px 16px !important;
+  border-right: 1px solid #e2e8f0;
+}
+
+/* Remove last cell right border */
+.ag-theme-alpine .ag-cell:last-child {
+  border-right: none;
+}
+
+/* Pagination style (if enabled) */
+.ag-theme-alpine .ag-paging-panel {
+  padding: 12px 24px;
+  font-size: 14px;
+  color: #4a5568; /* chakra gray.600 */
+}
+
+/* Checkbox or filter icon color */
+.ag-theme-alpine .ag-icon {
+  color: #667eea; /* chakra blue.500 */
+}
+
+/* Sort indicator color */
+.ag-theme-alpine .ag-sort-descending-icon,
+.ag-theme-alpine .ag-sort-ascending-icon {
+  fill: #764ba2; /* chakra purple.600 */
+}

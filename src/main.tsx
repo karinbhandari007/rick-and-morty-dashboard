@@ -2,16 +2,18 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.tsx";
-import { ChakraProvider, defaultSystem } from "@chakra-ui/react";
-import { ApolloProvider } from "@apollo/client";
-import client from "./configs/apollo-client.ts";
+
+import { BrowserRouter } from "react-router-dom";
+
+import { ModuleRegistry, AllCommunityModule } from "ag-grid-community";
+
+// Register the module
+ModuleRegistry.registerModules([AllCommunityModule]);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ChakraProvider value={defaultSystem}>
-      <ApolloProvider client={client}>
-        <App />
-      </ApolloProvider>
-    </ChakraProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>
 );
